@@ -8,6 +8,7 @@ function Home() {
       <img
         className="home__image"
         src="https://www.amazon.com/images/G/01/Audible/en_US/images/TM_Sandman_Amazon_GRD_DesktopHero_Template_1500x600_V4._CB410283097_.jpg"
+        alt="product"
       />
 
       <div className="home__row">
@@ -18,7 +19,7 @@ function Home() {
           rating={2}
           image="https://m.media-amazon.com/images/I/61KgbvNhh6L._AC_UY327_FMwebp_QL65_.jpg"
           class="s-image"
-          alt=""
+          alt="product"
         />
 
         <Product
@@ -28,7 +29,7 @@ function Home() {
           rating={5}
           image="https://m.media-amazon.com/images/I/41fziVetM7L._AC_UY327_FMwebp_QL65_.jpg"
           class="s-image"
-          alt=""
+          alt="product"
         />
       </div>
 
@@ -40,7 +41,7 @@ function Home() {
           rating={3}
           image="https://m.media-amazon.com/images/I/71DnucdeYpL._AC_UL480_FMwebp_QL65_.jpg"
           class="s-image"
-          alt=""
+          alt="product"
         />
 
         <Product
@@ -50,7 +51,7 @@ function Home() {
           rating={5}
           image="https://m.media-amazon.com/images/I/71kLrGElbOL._AC_UY327_FMwebp_QL65_.jpg"
           class="s-image"
-          alt=""
+          alt="product"
         />
 
         <Product
@@ -60,7 +61,7 @@ function Home() {
           rating={5}
           image="https://m.media-amazon.com/images/I/71jiGaztijL._AC_UY327_FMwebp_QL65_.jpg"
           class="s-image"
-          alt=""
+          alt="product"
         />
       </div>
       <Product
@@ -70,7 +71,7 @@ function Home() {
         rating={4}
         image="https://m.media-amazon.com/images/I/81Zt42ioCgL._AC_UY327_FMwebp_QL65_.jpg"
         class="s-image"
-        alt=""
+        alt="product"
       />
       <div></div>
 
