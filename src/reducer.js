@@ -12,6 +12,9 @@ export const initialState = {
   user: null
 };
 
+export const getBasketTotal = basket =>
+  basket?.reduce((amount, item) => item.price + amount, 0);
+
 const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
@@ -22,7 +25,9 @@ const reducer = (state, action) => {
     case "REMOVE_FROM_BASKET":
       //Logic for Removing item from basket
 
+      //cloned the basket
       let newBasket = [...state.basket];
+
       const index = state.basket.findIndex(
         basketItem => basketItem.id === action.id
       );
