@@ -1,14 +1,5 @@
 export const initialState = {
-  basket: [
-    {
-      id: "43221341",
-      title:
-        "Echo Plus (2nd Gen) - Premium sound with built-in smart home hub - Sandstone",
-      price: 579.99,
-      rating: 5,
-      image: "https://m.media-amazon.com/images/I/51sz+A576qL._AC_SY240_.jpg"
-    }
-  ],
+  basket: [],
   user: null
 };
 
@@ -18,6 +9,11 @@ export const getBasketTotal = basket =>
 const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user
+      };
     case "ADD_TO_BASKET":
       //Logic for adding item to basket
       return { ...state, basket: [...state.basket, action.item] };
